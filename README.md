@@ -1,2 +1,1 @@
 # Sejong-hakdang
-# Sejong-hakdang
