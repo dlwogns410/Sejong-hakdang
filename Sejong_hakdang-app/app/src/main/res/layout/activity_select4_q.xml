@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    tools:context=".Select4Q">
+
+    <TextView
+        android:id="@+id/select4_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/explain_quiz_kr"
+        android:textAllCaps="false"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/foreign_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/explain_quiz_en"
+        android:textAllCaps="false"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select4_text" />
+
+    <ImageView
+        android:id="@+id/ans_img"
+        android:layout_width="190dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select4_text"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/butterfly" />
+
+    <TextView
+        android:id="@+id/ans_word"
+        android:layout_width="277dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="테스트"
+        android:textSize="96sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/select4_text" />
+
+    <FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Q4_ans3">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/btn_shape"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/foreign_text2"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/submit_answer_en"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/Q4_ans1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Button"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/Img_Q4_ans1"
+        app:layout_constraintTop_toBottomOf="@+id/ans_img" />
+
+    <Button
+        android:id="@+id/Q4_ans2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Button"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/Img_Q4_ans2"
+        app:layout_constraintTop_toBottomOf="@+id/ans_img" />
+
+    <Button
+        android:id="@+id/Q4_ans3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:text="Button"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/Q4_ans1"
+        app:layout_constraintTop_toBottomOf="@+id/Q4_ans1" />
+
+    <Button
+        android:id="@+id/Q4_ans4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:text="Button"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/Q4_ans2"
+        app:layout_constraintTop_toBottomOf="@+id/Q4_ans2" />
+
+    <ImageButton
+        android:id="@+id/Img_Q4_ans1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/butterfly"
+        app:layout_constraintStart_toStartOf="@id/ans_word"
+        app:layout_constraintTop_toBottomOf="@+id/ans_word" />
+
+    <ImageButton
+        android:id="@+id/Img_Q4_ans2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/butterfly"
+        app:layout_constraintEnd_toEndOf="@id/ans_word"
+        app:layout_constraintTop_toBottomOf="@+id/ans_word" />
+
+    <ImageButton
+        android:id="@+id/Img_Q4_ans3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/butterfly"
+        app:layout_constraintStart_toStartOf="@id/Img_Q4_ans1"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Q4_ans1" />
+
+    <ImageButton
+        android:id="@+id/Img_Q4_ans4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/butterfly"
+        app:layout_constraintEnd_toEndOf="@id/Img_Q4_ans2"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Q4_ans2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectLanguageActivity">
+
+    <TextView
+        android:id="@+id/select_language_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/select_language"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/unite_states_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/united_states_icon"
+        app:layout_constraintEnd_toStartOf="@+id/china_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_language_tv" />
+
+    <TextView
+        android:id="@+id/english_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/english"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/unite_states_iv"
+        app:layout_constraintStart_toStartOf="@id/unite_states_iv"
+        app:layout_constraintTop_toBottomOf="@+id/unite_states_iv" />
+
+    <ImageView
+        android:id="@+id/china_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/china_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/unite_states_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/unite_states_iv"
+        app:layout_constraintTop_toTopOf="@+id/unite_states_iv" />
+
+    <TextView
+        android:id="@+id/chinese_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/chinese_cn"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/china_iv"
+        app:layout_constraintStart_toStartOf="@id/china_iv"
+        app:layout_constraintTop_toBottomOf="@+id/china_iv" />
+
+    <ImageView
+        android:id="@+id/vietnam_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/vietnam_icon"
+        app:layout_constraintEnd_toStartOf="@+id/japan_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unite_states_iv" />
+
+    <TextView
+        android:id="@+id/vietnam_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/vietnam_vn"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/vietnam_iv"
+        app:layout_constraintStart_toStartOf="@id/vietnam_iv"
+        app:layout_constraintTop_toBottomOf="@+id/vietnam_iv" />
+
+    <ImageView
+        android:id="@+id/japan_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/japan_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/vietnam_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vietnam_iv"
+        app:layout_constraintTop_toTopOf="@+id/vietnam_iv" />
+
+    <TextView
+        android:id="@+id/japan_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/japan_jp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/japan_iv"
+        app:layout_constraintStart_toStartOf="@id/japan_iv"
+        app:layout_constraintTop_toBottomOf="@+id/japan_iv" />
+
+    <Button
+        android:id="@+id/setting_up_btn"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/btn_shape"
+        android:text="@string/setting_up"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
